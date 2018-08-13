@@ -10,10 +10,10 @@
         text-color="#fff"
         active-text-color="#ffd04b">
         <span class="left-title">秒租办公</span>
-        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/help">帮助</el-menu-item>
         <el-menu-item v-if="user" index="/land">登陆</el-menu-item>
         <el-menu-item v-if="user" index="/register">注册</el-menu-item>
-        <el-menu-item index="/addmessage">帮助</el-menu-item>
+        <el-menu-item index="/">首页</el-menu-item>
       </el-menu>
     </div>
     <keep-alive>
@@ -49,13 +49,17 @@
     .left-title {
       display: inline-block;
       height: 60px;
-      width: 123px;
+      list-style-type: none;
       line-height: 60px;
       color: #fff;
       float: left;
       position: relative;
-      left: 5px;
-      font-size: 21px;
+      left: 7%;
+     border:none;
+    }
+    .el-menu-demo li{
+      float: right;
+      width: 18%;
     }
   }
 </style>

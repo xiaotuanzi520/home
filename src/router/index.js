@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Register from '@/components/Register'
 import Land from '@/components/Land'
-import Addmessage from '@/components/Addmessage'
+import Help from '@/components/Help'
 Vue.use(Router)
 
 export default new Router({
@@ -21,9 +21,9 @@ export default new Router({
       name: 'Land',
       component: Land
     }, {
-      path: '/addmessage',
-      name: 'Addmessage',
-      component: Addmessage
+      path: '/help',
+      name: 'Help',
+      component: Help
     }
   ]
 })
