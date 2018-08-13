@@ -135,7 +135,6 @@
       }
     },
     mounted: function() {
-      this.getCode();
     }
   }
 </script>
