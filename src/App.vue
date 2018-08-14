@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <div>
+      <span class="left-title">秒租办公</span>
       <el-menu
         class="el-menu-demo"
         mode="horizontal"
         @select="handleSelect"
         :router="true"
-        background-color="#545c64"
+        background-color="#f56c6c"
         text-color="#fff"
-        active-text-color="#ffd04b">
-        <span class="left-title">秒租办公</span>
+        active-text-color="#fff"
+      >
         <el-menu-item index="/help">帮助</el-menu-item>
-        <el-menu-item v-if="user" index="/land">登陆</el-menu-item>
+        <el-menu-item index="/app">App</el-menu-item>
         <el-menu-item v-if="user" index="/register">注册</el-menu-item>
+        <el-menu-item v-if="user" index="/land">登陆</el-menu-item>
         <el-menu-item index="/">首页</el-menu-item>
       </el-menu>
     </div>
@@ -54,12 +56,17 @@
       color: #fff;
       float: left;
       position: relative;
-      left: 7%;
+      left: 4%;
      border:none;
+      z-index: 2;
     }
-    .el-menu-demo li{
-      float: right;
-      width: 18%;
+    .el-menu-demo{
+      .el-menu-item{
+        padding: 0 2%;
+      }
+      li{
+        float: right;
+      }
     }
   }
 </style>

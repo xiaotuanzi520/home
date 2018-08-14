@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-      <h1>1234646首页</h1>
+  <div class="home">
+    <img src="../assets/home-search.png" alt="">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -31,4 +31,7 @@ li {
 a {
   color: #42b983;
 }
+  img{
+    width: 100%;
+  }
 </style>

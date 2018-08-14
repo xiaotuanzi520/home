@@ -1,4 +1,5 @@
 <template>
+  <div class="register">
   <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
     <el-form-item label="名称" prop="account">
       <el-input v-model.number="ruleForm2.account"></el-input>
@@ -7,30 +8,22 @@
       <el-input type="password" v-model="ruleForm2.pass" auto-complete="off"></el-input>
     </el-form-item>
 
-    <el-form-item label="email" prop="email">
+    <el-form-item label="邮箱" prop="email">
       <el-input v-model.number="ruleForm2.email" type="email"></el-input>
-    </el-form-item>
-    <el-form-item label="yzm" prop="yzm">
-      <el-input v-model.number="ruleForm2.yzm" ></el-input>
     </el-form-item>
     <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
       <el-button @click="resetForm('ruleForm2')">重置</el-button>
     </el-form-item>
   </el-form>
+  </div>
 </template>
 <script>
   import Qs from 'qs'
   export default {
+    name: 'Register',
     data() {
       var checkEmail = (rule, value, callback) => {
-        if (!value) {
-          return callback(new Error('不能为空'));
-        } else {
-          callback();
-        }
-      };
-      var checkYzm = (rule, value, callback) => {
         if (!value) {
           return callback(new Error('不能为空'));
         } else {
@@ -74,7 +67,6 @@
           checkPass: '',
           email: '',
           account: '', // 4-16
-          yzm: ''
         },
         rules2: {
           pass: [
@@ -88,9 +80,6 @@
           ],
           account: [
             {validator: checkAccount, trigger: 'blur'}
-          ],
-          yzm: [
-            {validator: checkYzm, trigger: 'blur'}
           ]
         }
       };
@@ -124,14 +113,6 @@
       },
       resetForm(formName) {
         this.$refs[formName].resetFields();
-      },
-      getCode() {
-        this.$http({
-          method: 'post',
-          url: "/hWeb/user/identification"
-        }).then((res) => {
-          this.ruleForm2.yzm = res.data.pin;
-        });
       }
     },
     mounted: function() {
@@ -139,5 +120,11 @@
   }
 </script>
 <style>
-
+  .el-form{
+      padding: 10px;
+  }
+  .register{
+    max-width: 400px;
+    margin: 90px auto;
+  }
 </style>

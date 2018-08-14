@@ -1,5 +1,5 @@
 <template>
-  <div class="denglu">
+  <div class="login">
     <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
       <el-form-item label="用户名" prop="name">
         <el-input v-model.number="ruleForm2.name"></el-input>
@@ -97,8 +97,8 @@
   }
 </script>
 <style scoped>
-  .denglu{
-    width: 538px;
+  .login{
+    max-width: 400px;
     margin: 90px auto;
   }
 </style>
