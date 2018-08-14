@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div>
+      <span class="left-title">秒租办公</span>
       <el-menu
         class="el-menu-demo"
         mode="horizontal"
@@ -9,11 +10,13 @@
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b">
-        <span class="left-title">秒租办公</span>
-        <el-menu-item index="/help">帮助</el-menu-item>
+        <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item v-if="user" index="/land">登陆</el-menu-item>
         <el-menu-item v-if="user" index="/register">注册</el-menu-item>
-        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="/app">App</el-menu-item>
+        <el-menu-item index="/help">帮助</el-menu-item>
+        <el-menu-item index="/">案例</el-menu-item>
+        <el-menu-item index="/master">业主</el-menu-item>
       </el-menu>
     </div>
     <keep-alive>
@@ -54,12 +57,17 @@
       color: #fff;
       float: left;
       position: relative;
-      left: 7%;
+      left: 4%;
      border:none;
+      z-index: 2;
     }
-    .el-menu-demo li{
-      float: right;
-      width: 18%;
+    .el-menu-demo{
+      background: red;
+      li{
+        float: right;
+        width: 5%;
+        margin-right: 15px;
+      }
     }
   }
 </style>

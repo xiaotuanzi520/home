@@ -22,6 +22,7 @@
 <script>
   import Qs from 'qs'
   export default {
+    name: 'Register',
     data() {
       var checkEmail = (rule, value, callback) => {
         if (!value) {
