@@ -1,6 +1,8 @@
 <template>
-  <div class="login">
-    <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+  <div>
+    <Header/>
+    <div class="login-wrap">
+      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
       <el-form-item label="用户名" prop="name">
         <el-input v-model.number="ruleForm2.name"></el-input>
       </el-form-item>
@@ -12,10 +14,18 @@
         <el-button @click="resetForm('ruleForm2')">重置</el-button>
       </el-form-item>
     </el-form>
+    </div>
+    <Footer/>
   </div>
 </template>
 <script>
+  import Header from '../header/index'
+  import Footer from '../footer/index'
   export default {
+    name: 'Login',
+    components:{
+      Header,Footer
+    },
     data() {
       var validatePass = (rule, value, callback) => {
         if (value === '') {
@@ -97,8 +107,5 @@
   }
 </script>
 <style scoped>
-  .login{
-    max-width: 400px;
-    margin: 90px auto;
-  }
+  @import './index.css';
 </style>

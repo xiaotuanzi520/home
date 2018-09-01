@@ -1,6 +1,8 @@
 <template>
-  <div class="help">
-    <img src="../assets/help-main.png" alt="">
+  <div>
+    <Header/>
+    <div class="help-wrap">
+    <img src="../../img/help-main.png" alt="">
     <ul class="detail">
       <li v-for="item in items">
         <p>{{ item.message }}</p>
@@ -10,16 +12,18 @@
     <div class="phone">
       更多问题请致电 <span>400-821-6881</span>
     </div>
-    <home-foot/>
+    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
-  import HomeFoot from './HomeFoot'
+  import Header from '../../components/header/index'
+  import Footer from '../../components/footer/index'
   export default {
     name: 'Help',
     components:{
-      HomeFoot
+      Header,Footer
     },
     data() {
       return {
@@ -59,36 +63,6 @@
   }
 </script>
 
-<style scoped lang="scss">
-
-  .help {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: left;
-    color: #2c3e50;
-    img {
-      width: 100%;
-    }
-    .detail {
-      list-style-type: none;
-      padding:5% 0 0 20%;
-      li {
-        margin-bottom: 3%;
-        font-size: 14px;
-        p:first-child {
-          font-weight: bold;
-          margin-bottom: 1%;
-        }
-      }
-    }
-    .phone {
-      margin-left: 20%;
-      font-size: 14px;
-      margin-bottom: 5%;
-      span {
-        color: #f00;
-      }
-    }
-  }
+<style scoped>
+  @import './index.css';
 </style>

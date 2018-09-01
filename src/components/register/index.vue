@@ -1,6 +1,8 @@
 <template>
-  <div class="register">
-  <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+  <div>
+    <Header/>
+    <div class="register-wrap">
+      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
     <el-form-item label="名称" prop="account">
       <el-input v-model.number="ruleForm2.account"></el-input>
     </el-form-item>
@@ -16,12 +18,19 @@
       <el-button @click="resetForm('ruleForm2')">重置</el-button>
     </el-form-item>
   </el-form>
+    </div>
+    <Footer/>
   </div>
 </template>
 <script>
+  import Header from '../header/index'
+  import Footer from '../footer/index'
   import Qs from 'qs'
   export default {
     name: 'Register',
+    components:{
+      Header,Footer
+    },
     data() {
       var checkEmail = (rule, value, callback) => {
         if (!value) {
@@ -120,11 +129,5 @@
   }
 </script>
 <style>
-  .el-form{
-      padding: 10px;
-  }
-  .register{
-    max-width: 400px;
-    margin: 90px auto;
-  }
+  @import './index.css';
 </style>

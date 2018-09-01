@@ -1,5 +1,5 @@
 <template>
-  <div class="foot">
+  <div class="footer-wrap">
     <div class="foot-content">
       <ul>
         <li>业务体系</li>
@@ -31,7 +31,7 @@
 
 <script>
   export default {
-    name: 'HomeFoot',
+    name: 'Footer',
     data() {
       return {
 
@@ -45,42 +45,6 @@
   }
 </script>
 
-<style scoped lang="scss">
-  .foot{
-    width: 100%;
-    height: 200px;
-    background:#363F44;
-    color: #ccc;
-    padding: 1% 8%;
-    .foot-content{
-      width: 100%;
-      height: 80%;
-      border-bottom: 1px solid #606266;
-      ul{
-        float: left;
-        width: 20%;
-        height: 100%;
-        list-style: none;
-        li{
-          line-height: 2;
-        }
-        li:first-child{
-          color: #fff;
-          line-height: 4;
-        }
-      }
-      ul:last-child{
-        width: 40%;
-      }
-    }
-    .home-footer{
-      text-align: center;
-      padding-top: 5px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .foot{
-      font-size: 10px;
-    }
-  }
+<style scoped>
+  @import './index.css';
 </style>

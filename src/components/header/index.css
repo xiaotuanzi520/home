@@ -1,0 +1,18 @@
+.header-wrap {
+  display: inline-block;
+  height: 60px;
+  list-style-type: none;
+  line-height: 60px;
+  color: #fff;
+  float: left;
+  position: relative;
+  left: 4%;
+  border:none;
+  z-index: 2;
+}
+.el-menu-demo li{
+  float: right;
+}
+.el-menu-item{
+  padding: 0 2%;
+}

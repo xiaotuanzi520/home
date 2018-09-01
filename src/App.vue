@@ -1,23 +1,5 @@
 <template>
   <div id="app">
-    <div>
-      <span class="left-title">秒租办公</span>
-      <el-menu
-        class="el-menu-demo"
-        mode="horizontal"
-        @select="handleSelect"
-        :router="true"
-        background-color="#f56c6c"
-        text-color="#fff"
-        active-text-color="#fff"
-      >
-        <el-menu-item index="/help">帮助</el-menu-item>
-        <el-menu-item index="/app">App</el-menu-item>
-        <el-menu-item v-if="user" index="/register">注册</el-menu-item>
-        <el-menu-item v-if="user" index="/land">登陆</el-menu-item>
-        <el-menu-item index="/">首页</el-menu-item>
-      </el-menu>
-    </div>
     <keep-alive>
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
@@ -30,43 +12,12 @@
     name: 'App',
     data() {
       return {
-        user: true
+
       }
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      },
     }
   }
 </script>
 
-<style scoped lang="scss">
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    .left-title {
-      display: inline-block;
-      height: 60px;
-      list-style-type: none;
-      line-height: 60px;
-      color: #fff;
-      float: left;
-      position: relative;
-      left: 4%;
-     border:none;
-      z-index: 2;
-    }
-    .el-menu-demo{
-      .el-menu-item{
-        padding: 0 2%;
-      }
-      li{
-        float: right;
-      }
-    }
-  }
+<style scoped>
+
 </style>
