@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div  class="register-wrap">
     <Header/>
-    <div class="register-wrap">
+    <div>
       <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
     <el-form-item label="名称" prop="account">
       <el-input v-model.number="ruleForm2.account"></el-input>
