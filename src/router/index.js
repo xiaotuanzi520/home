@@ -16,15 +16,8 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
-    }, {
-      path: '/header',
-      name: 'Header',
-      component: Header
-    }, {
-      path: '/footer',
-      name: 'Footer',
-      component: Footer
-    }, {
+    },
+   {
       path: '/help',
       name: 'Help',
       component: Help
