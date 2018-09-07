@@ -1,30 +1,27 @@
 <template>
-  <div class="login-wrap">
-    <Header/>
-    <div >
+  <Login>
+    <el-dialog class="login-wrap" title="登录" :visible.sync="dialogLoginVisible" @close="close" center modal="true">
       <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
-      <el-form-item label="用户名" prop="name">
-        <el-input v-model.number="ruleForm2.name"></el-input>
-      </el-form-item>
-      <el-form-item label="密码" prop="pass">
-        <el-input type="password" v-model="ruleForm2.pass" auto-complete="off"></el-input>
-      </el-form-item>
-      <el-form-item>
-        <el-button type="primary" @click="submitForm('ruleForm2')">登陆</el-button>
-        <el-button @click="resetForm('ruleForm2')">重置</el-button>
-      </el-form-item>
-    </el-form>
-    </div>
-    <Footer/>
-  </div>
+        <h1>欢迎登录秒租办公</h1>
+        <h3>还没有账号,<span>注册</span></h3>
+        <el-form-item prop="name">
+          <el-input v-model.number="ruleForm2.name" placeholder="手机号码"></el-input>
+        </el-form-item>
+        <el-form-item prop="pass">
+          <el-input type="password" v-model="ruleForm2.pass" auto-complete="off" placeholder="密码"></el-input>
+        </el-form-item>
+        <span><a>忘记密码？</a></span>
+        <el-form-item>
+          <el-button type="primary" @click="submitForm('ruleForm2')">登录</el-button>
+        </el-form-item>
+      </el-form>
+    </el-dialog>
+  </Login>
 </template>
 <script>
-  import Header from '../header/index'
-  import Footer from '../footer/index'
   export default {
-    name: 'Login',
-    components:{
-      Header,Footer
+    props: {
+      dialogLoginVisible: false
     },
     data() {
       var validatePass = (rule, value, callback) => {
@@ -76,6 +73,9 @@
       };
     },
     methods: {
+      close () {
+        this.$emit('dialogLoginHide',false)
+      },
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {

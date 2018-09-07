@@ -1,0 +1,22 @@
+.el-dialog{
+  width: 400px;
+}
+.download-title{
+  height: 100px;
+  font-size: 14px;
+}
+.download-title span{
+  font-size: 20px;
+}
+.download-wrap i{
+  display: inline-block;
+  width: 175px;
+  height: 176px;
+}
+.download-app{
+  background: url("../../img/pages/download-app.png");
+}
+.download-program{
+  background: url("../../img/pages/download-program.png");
+}
+

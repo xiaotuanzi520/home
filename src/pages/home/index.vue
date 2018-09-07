@@ -2,7 +2,7 @@
     <div>
       <Header/>
       <div class="home-warp">
-      <img src="../../img/home-search.png" alt="">
+      <img src="../../img/pages/home-banner.png" alt="">
       <el-row>
         <el-col :span="8" v-for="(o, index) in 3" :key="o" :offset="0">
           <el-card :body-style="{ padding: '0px' }">

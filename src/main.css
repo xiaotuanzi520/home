@@ -4,11 +4,12 @@
   padding: 0;
 }
 html,body{
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   background: #fff;
   font-size: 12px;
   font-weight: 400;
   color: #666;
+  width: 100%;
+  overflow: auto;
 }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
 fieldset,input,textarea,p,blockquote,th,td {

@@ -1,4 +1,22 @@
-.login-wrap{
-  width: 400px;
-  margin: 90px auto;
+.el-dialog{
+  width: 350px;
 }
+.el-form h3{
+    margin: 20px 0;
+}
+.el-form span{
+  color: #2E6DE5;
+}
+.el-form button{
+  width: 300px;
+  margin-top: 20px;
+  background: #FB0F3A;
+  border: none;
+}
+.el-form button>span{
+  color: #fff;
+}
+.el-form-item__content{
+  margin-left: 0 !important;
+}
+
