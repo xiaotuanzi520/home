@@ -1,5 +1,5 @@
 <template>
-    <el-dialog class="register-wrap" title="注册" :visible.sync="dialogRegisterVisible" @close="close" center @modal="true">
+    <el-dialog class="register-wrap" title="注册" :visible="dialogRegisterVisible" @close="close" center @modal="true">
       <el-form  label-width="100px" class="demo-ruleForm">
         <h1>手机号注册</h1>
         <h3>已有账号，<span>登录</span></h3>
@@ -25,22 +25,17 @@
   export default {
     name: 'Register',
     props: {
-      dialogRegisterVisible: false,
+      dialogRegisterVisible: false
     },
     data() {
       // console.log(this.props)
       return {
-        ruleForm2: {
-          input5:"",
-          pass: '', // 7-16
-          checkPass: '',
-          account: '', // 4-16
-        }
+
       }
     },
     methods: {
       close () {
-        this.$emit('dialogRegisterHide',false)
+        this.$emit("dialogRegisterHide")
       },
     },
     mounted: function() {
