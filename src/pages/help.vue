@@ -2,7 +2,7 @@
   <div>
     <Header/>
     <div class="help-wrap">
-    <img src="../../img/pages/help-banner.png" alt="">
+    <img src="../img/pages/help-banner.png" alt="">
     <ul class="detail">
       <li v-for="item in items">
         <p>{{ item.message }}</p>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
+  import Header from '../components/header'
+  import Footer from '../components/footer'
   export default {
     name: 'Help',
     components:{
@@ -64,5 +64,35 @@
 </script>
 
 <style scoped>
-  @import './index.css';
+  .help-wrap {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+  }
+  img {
+    width: 100%;
+  }
+  .detail {
+    list-style-type: none;
+    padding: 5% 0 0 20%;
+  }
+  li {
+    margin-bottom: 3%;
+    font-size: 14px;
+  }
+  p:first-child {
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  .phone {
+    margin-left: 20%;
+    font-size: 14px;
+    margin-bottom: 5%;
+  }
+  span {
+    color: #f00;
+  }
+
 </style>

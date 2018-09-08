@@ -1,18 +1,16 @@
 <template>
   <div>
     <Header/>
-<div class="hot-space-header">
-热门空间
-</div>
+
     <Footer/>
   </div>
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
+  import Header from '../components/header'
+  import Footer from '../components/footer'
   export default {
-    name: 'Spaces',
+    name: 'Outline',
     components:{
       Header,Footer
     },
@@ -25,5 +23,5 @@
 </script>
 
 <style scoped>
-  @import './index.css';
+
 </style>

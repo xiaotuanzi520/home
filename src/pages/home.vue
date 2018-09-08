@@ -2,7 +2,7 @@
     <div>
       <Header/>
       <div class="home-warp">
-      <img src="../../img/pages/home-banner.png" alt="">
+      <img src="../img/pages/home-banner.png" alt="">
       <el-row>
         <el-col :span="8" v-for="(o, index) in 3" :key="o" :offset="0">
           <el-card :body-style="{ padding: '0px' }">
@@ -25,8 +25,8 @@
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
+  import Header from '../components/header'
+  import Footer from '../components/footer'
 export default {
   name: 'Home',
   components:{
@@ -41,5 +41,22 @@ export default {
 </script>
 
 <style scoped>
-  @import './index.css';
+  h1, h2 {
+    font-weight: normal;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
+  img{
+    width: 100%;
+  }
+
 </style>
