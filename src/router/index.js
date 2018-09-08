@@ -6,6 +6,7 @@ import Case from '../pages/case'
 import Spaces from '../pages/spaces'
 import HotSpaces from '../pages/hotSpaces'
 import RentOwner from '../pages/rentOwner'
+import CreateHouse from '../pages/createHouse'
 import Outline from '../pages/outline'
 import Introduction from '../pages/introduction'
 import History from '../pages/history'
@@ -42,6 +43,10 @@ export default new Router({
       name: 'RentOwner',
       component: RentOwner
     }, {
+      path: '/createHouse',
+      name: 'CreateHouse',
+      component: CreateHouse
+    }, {
       path: '/outline',
       name: 'Outline',
       component: Outline
@@ -58,7 +63,7 @@ export default new Router({
       name: 'Service',
       component: Service
     }, {
-      path: '/service',
+      path: '/cooperation',
       name: 'Cooperation',
       component: Cooperation
     }, {

@@ -1,6 +1,6 @@
 <template>
     <el-dialog class="login-wrap" title="登录" :visible="dialogLoginVisible" @close="close" center @modal="true">
-      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
         <h1>欢迎登录秒租办公</h1>
         <h3>还没有账号,<span>注册</span></h3>
         <el-form-item prop="name">
@@ -123,9 +123,6 @@
   }
   .el-form button>span{
     color: #fff;
-  }
-  .el-form-item__content{
-    margin-left: 0 !important;
   }
 
 

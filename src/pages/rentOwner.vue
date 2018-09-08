@@ -1,8 +1,10 @@
 <template>
   <div>
     <Header/>
-<div class="space-header">
-
+<div class="banner space-header">
+  <a href="#/Outline">公司概要</a>
+  <a href="#/Introduction">公司介绍</a>
+  <a href="#/CreateHouse">创建房源</a>
 </div>
     <Footer/>
   </div>
@@ -26,15 +28,7 @@
 
 <style scoped>
   .space-header{
-    position: relative;
-    width: 100%;
-    min-height:300px;
-    font-weight: 300;
-    color: #fff;
     background-image: url('../img/pages/owner-banner.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
   }
 
 </style>

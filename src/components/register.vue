@@ -1,6 +1,6 @@
 <template>
     <el-dialog class="register-wrap" title="注册" :visible="dialogRegisterVisible" @close="close" center @modal="true">
-      <el-form  label-width="100px" class="demo-ruleForm">
+      <el-form class="demo-ruleForm">
         <h1>手机号注册</h1>
         <h3>已有账号，<span>登录</span></h3>
         <el-form-item prop="account">
@@ -60,9 +60,6 @@
   }
   .el-form button>span{
     color: #fff;
-  }
-  .el-form-item__content{
-    margin-left: 0 !important;
   }
   .el-select .el-input {
     width: 80px;
