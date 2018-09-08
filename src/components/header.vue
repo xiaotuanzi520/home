@@ -28,9 +28,9 @@
 </template>
 
 <script>
-  import Login from '../../components/login/index'
-  import Register from '../../components/register/index'
-  import Download from '../../components/download/index'
+  import Login from '../components/login'
+  import Register from '../components/register'
+  import Download from '../components/download'
   export default {
     name: 'Header',
     components:{
@@ -71,5 +71,23 @@
 </script>
 
 <style scoped>
-  @import './index.css';
+  .header-wrap {
+    display: inline-block;
+    height: 60px;
+    list-style-type: none;
+    line-height: 60px;
+    color: #fff;
+    float: left;
+    position: relative;
+    left: 4%;
+    border:none;
+    z-index: 2;
+  }
+  .el-menu-demo li{
+    float: right;
+  }
+  .el-menu-item{
+    padding: 0 2%;
+  }
+
 </style>

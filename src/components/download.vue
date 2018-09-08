@@ -1,5 +1,5 @@
 <template>
-    <el-dialog :visible.sync="dialogDownloadVisible" @close="close" center @modal="true">
+    <el-dialog class="download-wrap" :visible="dialogDownloadVisible" @close="close" center @modal="true">
       <div class="download-title">请在<span>秒租办公APP</span>或<span>小程序中</span>完成订单</div>
       <div class="download-tips">扫描以下二维码下载</div>
       <div class="download-icon">
@@ -25,11 +25,33 @@
     },
     methods: {
       close () {
-        this.$emit('dialogDowmloadHide',false)
+        this.$emit('dialogDownloadHide',false)
       },
     }
   }
 </script>
 <style scoped>
-  @import './index.css';
+  .el-dialog{
+    width: 400px;
+  }
+  .download-title{
+    height: 100px;
+    font-size: 14px;
+  }
+  .download-title span{
+    font-size: 20px;
+  }
+  .download-wrap i{
+    display: inline-block;
+    width: 175px;
+    height: 176px;
+  }
+  .download-app{
+    background: url("../img/public/download-app.png");
+  }
+  .download-program{
+    background: url("../img/public/download-program.png");
+  }
+
+
 </style>

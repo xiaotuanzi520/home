@@ -25,7 +25,7 @@
           <i class="list-two fr"></i>
         </li>
         <li>
-          <i class="list-one"></i>
+          <i class="list-three"></i>
           <div class="list-introduce fr">
             <h1>微能创投加速器</h1>
             <p>总部设在上海，在浦东新区张江中区、静安区市北大数据产业基地、闵行区上海交通大学设有近4000平米WELabs联合创新空间，同时在北京、深圳、硅谷和首尔开设联络机构。微能的目标是建成中国最大的服务天使投资人网络的创业加速平台，连接有全球视野和创新思维的创始人群体，培育中国高科技创业领域的独角兽企业。
@@ -40,8 +40,8 @@
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
+  import Header from '../components/header'
+  import Footer from '../components/footer'
   export default {
     name: 'Case',
     components:{
@@ -56,5 +56,54 @@
 </script>
 
 <style scoped>
-  @import './index.css';
+  .case-header{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    font-weight: 300;
+    color: #fff;
+    background-image: url('../img/pages/case-banner.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  .case-list{
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .case-list ul li{
+    width: 1100px;
+    height: 400px;
+    margin: 20px;
+  }
+  .case-list i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 509px;
+    height: 400px;
+  }
+  .list-one{
+    background: url("../img/pages/case-list1.png");
+  }
+  .list-two{
+    background: url("../img/pages/case-list2.png");
+  }
+  .list-three{
+    background: url("../img/pages/case-list3.png");
+  }
+  .list-introduce{
+    display: inline-block;
+    margin-left: 20px;
+    width: 509px;
+    height: 400px;
+    line-height: 400px;
+  }
+  .list-introduce h1{
+    height: 50px;
+    line-height: 2;
+  }
+  .list-introduce p{
+    line-height: 2;
+  }
+
 </style>

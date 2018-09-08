@@ -1,6 +1,6 @@
 <template>
-    <el-dialog title="注册" :visible.sync="dialogRegisterVisible" @close="close" center @modal="true">
-      <el-form  label-width="100px" class="demo-ruleForm">
+  <el-dialog class="register-wrap" title="注册" :visible="dialogRegisterVisible" @close="close" center @modal="true">
+      <el-form class="demo-ruleForm">
         <h1>手机号注册</h1>
         <h3>已有账号，<span>登录</span></h3>
         <el-form-item prop="account">
@@ -25,22 +25,17 @@
   export default {
     name: 'Register',
     props: {
-      dialogRegisterVisible: false,
+      dialogRegisterVisible: false
     },
     data() {
       // console.log(this.props)
       return {
-        ruleForm2: {
-          input5:"",
-          pass: '', // 7-16
-          checkPass: '',
-          account: '', // 4-16
-        }
+
       }
     },
     methods: {
       close () {
-        this.$emit('dialogRegisterHide',false)
+        this.$emit("dialogRegisterHide")
       },
     },
     mounted: function() {
@@ -48,5 +43,31 @@
   }
 </script>
 <style>
-  @import './index.css';
+  .el-dialog{
+    width: 350px;
+  }
+  .el-form h3{
+    margin: 20px 0;
+  }
+  .el-form span{
+    color: #2E6DE5;
+  }
+  .el-form button{
+    width: 300px;
+    margin-top: 20px;
+    background: #FB0F3A;
+    border: none;
+  }
+  .el-form button>span{
+    color: #fff;
+  }
+  .el-select .el-input {
+    width: 80px;
+    height: 38px;
+  }
+  .input-with-select .el-input-group__prepend {
+    background-color: #fff;
+  }
+
+
 </style>

@@ -67,8 +67,8 @@
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
+  import Header from '../components/header'
+  import Footer from '../components/footer'
   import ElButton from "element-ui/packages/button/src/button";
 export default {
   name: 'Home',
@@ -85,5 +85,22 @@ export default {
 </script>
 
 <style scoped>
-  @import './index.css';
+  h1, h2 {
+    font-weight: normal;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
+  img{
+    width: 100%;
+  }
+
 </style>

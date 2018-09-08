@@ -19,6 +19,10 @@ fieldset,input,textarea,p,blockquote,th,td {
 a{
   text-decoration: none;
 }
+p{
+  line-height: 2;
+  font-size: 14px;
+}
 fieldset,img {
   border:0;
 }
@@ -29,17 +33,8 @@ address,caption,cite,code,dfn,em,strong,th,var {
 ul,li,dl,dd,dt {
   list-style:none;
 }
-caption,th {
-  text-align:left;
-}
 h1,h2,h3,h4,h5,h6 {
   font-weight:normal;
-}
-q:before,q:after {
-  content:'';
-}
-.marAuto{
-  margin: 0 auto;
 }
 .fl{
   float: left;
@@ -52,4 +47,13 @@ q:before,q:after {
   content: "";
   display: table;
   zoom: 1
+}
+.banner{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }

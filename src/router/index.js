@@ -1,13 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../pages/home/index'
-import Header from '../components/header/index'
-import Footer from '../components/footer/index'
-import Help from '../pages/help/index'
-import Case from '../pages/case/index'
-import Spaces from '../pages/spaces/index'
-import HotSpaces from '../pages/hot-spaces/index'
-import RentOwner from '../pages/rent-owner/index'
+import Home from '../pages/home'
+import Help from '../pages/help'
+import Case from '../pages/case'
+import Spaces from '../pages/spaces'
+import HotSpaces from '../pages/hotSpaces'
+import RentOwner from '../pages/rentOwner'
+import CreateHouse from '../pages/createHouse'
+import Outline from '../pages/outline'
+import Introduction from '../pages/introduction'
+import History from '../pages/history'
+import Service from '../pages/service'
+import Cooperation from '../pages/cooperation'
+import Address from '../pages/address'
 Vue.use(Router);
 
 export default new Router({
@@ -37,6 +42,34 @@ export default new Router({
       path: '/rentOwner',
       name: 'RentOwner',
       component: RentOwner
+    }, {
+      path: '/createHouse',
+      name: 'CreateHouse',
+      component: CreateHouse
+    }, {
+      path: '/outline',
+      name: 'Outline',
+      component: Outline
+    }, {
+      path: '/introduction',
+      name: 'Introduction',
+      component: Introduction
+    }, {
+      path: '/history',
+      name: 'History',
+      component: History
+    }, {
+      path: '/service',
+      name: 'Service',
+      component: Service
+    }, {
+      path: '/cooperation',
+      name: 'Cooperation',
+      component: Cooperation
+    }, {
+      path: '/address',
+      name: 'Address',
+      component: Address
     }
   ]
 })

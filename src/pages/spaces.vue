@@ -37,9 +37,8 @@
 </template>
 
 <script>
-  import Header from '../../components/header/index'
-  import Footer from '../../components/footer/index'
-
+  import Header from '../components/header'
+  import Footer from '../components/footer'
   export default {
     name: 'Spaces',
     components: {
@@ -52,5 +51,51 @@
 </script>
 
 <style scoped>
-  @import './index.css';
+  .space-header{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    font-weight: 300;
+    color: #fff;
+    background-image: url('../img/pages/space-banner.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  .space-list{
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .space-list ul li{
+    width: 1100px;
+    height: 400px;
+    margin: 20px;
+  }
+  .space-list i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 509px;
+    height: 400px;
+  }
+  .list-one{
+    background: url("../img/pages/space-list1.png");
+  }
+  .list-two{
+    background: url("../img/pages/space-list2.png");
+  }
+  .list-introduce{
+    display: inline-block;
+    margin-left: 20px;
+    width: 509px;
+    height: 400px;
+    line-height: 400px;
+  }
+  .list-introduce h1{
+    height: 50px;
+    line-height: 2;
+  }
+  .list-introduce p{
+    line-height: 2;
+  }
+
 </style>

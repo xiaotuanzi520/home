@@ -1,6 +1,6 @@
 <template>
-    <el-dialog title="登录" :visible.sync="dialogLoginVisible" @close="close" center @modal="true">
-      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+    <el-dialog class="login-wrap" title="登录" :visible="dialogLoginVisible" @close="close" center @modal="true">
+      <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" class="demo-ruleForm">
         <h1>欢迎登录秒租办公</h1>
         <h3>还没有账号,<span>注册</span></h3>
         <el-form-item prop="name">
@@ -106,5 +106,24 @@
   }
 </script>
 <style scoped>
-  @import './index.css';
+  .el-dialog{
+    width: 350px;
+  }
+  .el-form h3{
+    margin: 20px 0;
+  }
+  .el-form span{
+    color: #2E6DE5;
+  }
+  .el-form button{
+    width: 300px;
+    margin-top: 20px;
+    background: #FB0F3A;
+    border: none;
+  }
+  .el-form button>span{
+    color: #fff;
+  }
+
+
 </style>
