@@ -71,7 +71,7 @@
   }
   .case-list ul li{
     width: 1100px;
-    height: 400px;
+    height: 420px;
     margin: 20px;
   }
   .case-list i{
