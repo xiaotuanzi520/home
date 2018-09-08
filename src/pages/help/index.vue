@@ -2,7 +2,7 @@
   <div>
     <Header/>
     <div class="help-wrap">
-    <img src="../../img/pages/help-banner.png" alt="">
+      <i></i>
     <ul class="detail">
       <li v-for="item in items">
         <p>{{ item.message }}</p>

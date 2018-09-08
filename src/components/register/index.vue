@@ -1,5 +1,5 @@
 <template>
-    <el-dialog class="register-wrap" title="注册" :visible.sync="dialogRegisterVisible" @close="close" center @modal="true">
+    <el-dialog title="注册" :visible.sync="dialogRegisterVisible" @close="close" center @modal="true">
       <el-form  label-width="100px" class="demo-ruleForm">
         <h1>手机号注册</h1>
         <h3>已有账号，<span>登录</span></h3>
