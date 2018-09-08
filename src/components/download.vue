@@ -31,17 +31,24 @@
   }
 </script>
 <style scoped>
-  .el-dialog{
-    width: 400px;
+  .download-wrap .el-dialog--center{
+    width:425px;
   }
   .download-title{
-    height: 100px;
     font-size: 14px;
   }
   .download-title span{
     font-size: 20px;
   }
-  .download-wrap i{
+  .download-tips{
+    margin: 20px 0;
+  }
+  .download-icon{
+    display: inline-block;
+    width: 185px;
+    text-align: center;
+  }
+  .el-dialog__body i{
     display: inline-block;
     width: 175px;
     height: 176px;
@@ -52,6 +59,4 @@
   .download-program{
     background: url("../img/public/download-program.png");
   }
-
-
 </style>

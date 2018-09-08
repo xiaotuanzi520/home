@@ -43,7 +43,7 @@
   }
 </script>
 <style>
-  .el-dialog{
+  register-wrap .el-dialog{
     width: 350px;
   }
   .el-form h3{

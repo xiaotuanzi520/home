@@ -71,7 +71,7 @@
     background-image: url('../img/pages/outline-banner.png');
   }
 .outline-wrap ul li{
-  padding: 30px 250px;
+  padding: 30px 170px;
   min-height: 450px;
 }
 .outline-wrap ul li:nth-child(2){

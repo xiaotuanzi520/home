@@ -60,8 +60,6 @@
     position: relative;
     width: 100%;
     min-height: 300px;
-    font-weight: 300;
-    color: #fff;
     background-image: url('../img/pages/case-banner.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -105,5 +103,4 @@
   .list-introduce p{
     line-height: 2;
   }
-
 </style>

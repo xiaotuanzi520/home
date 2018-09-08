@@ -106,7 +106,7 @@
   }
 </script>
 <style scoped>
-  .el-dialog{
+  login-wrap .el-dialog{
     width: 350px;
   }
   .el-form h3{

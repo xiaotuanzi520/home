@@ -71,8 +71,14 @@
     text-align: left;
     color: #2c3e50;
   }
-  img {
+  .help-wrap i{
+    display: inline-block;
     width: 100%;
+    min-height: 300px;
+    text-align: left;
+    color: #2c3e50;
+    background-image: url('../img/pages/help-banner.png');
+    background-size: cover;
   }
   .detail {
     list-style-type: none;
@@ -94,5 +100,4 @@
   span {
     color: #f00;
   }
-
 </style>

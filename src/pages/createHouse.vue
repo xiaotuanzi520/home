@@ -74,4 +74,7 @@
     margin-left: -300px;
     padding: 20px;
   }
+.el-form button{
+  width: 120px;
+}
 </style>
