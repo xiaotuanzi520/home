@@ -1,47 +1,40 @@
 <template>
   <div>
-      <span class="header-wrap">秒租办公</span>
+      <i class="icon-logo"></i>
       <el-menu
-        class="el-menu-demo"
+        class="el-menu-header"
         mode="horizontal"
         @select="handleSelect"
         :router="true"
-        background-color="#f56c6c"
+        background-color="#363F45"
         text-color="#fff"
-        active-text-color="#fff"
+        active-text-color="#FB274B"
       >
+        <el-menu-item index="/rentOwner"><i class="icon-rent-owner"></i><i class="rent-owner-btn"></i></el-menu-item>
         <el-menu-item index="/"><i></i>简体中文</el-menu-item>
         <el-menu-item index="/"><span @click="handleLogin()">登录</span></el-menu-item>
-        <el-menu-item index="/"><span @click="handleRegister()">注册</span></el-menu-item>
         <el-menu-item index="/"><span @click="handleDownload()">下载APP</span></el-menu-item>
-        <el-menu-item index="/help">帮助</el-menu-item>
-        <el-menu-item index="/case">案例</el-menu-item>
         <el-menu-item index="/spaces">合作空间</el-menu-item>
-        <el-menu-item index="/rentOwner">秒租业主</el-menu-item>
         <el-menu-item index="/hotSpaces">热门空间</el-menu-item>
         <el-menu-item index="/">首页</el-menu-item>
       </el-menu>
     <Login @dialogLoginHide="dialogLoginHide" :dialogLoginVisible="isShowLogin"></Login>
-    <Register @dialogRegisterHide="dialogRegisterHide" :dialogRegisterVisible="isShowRegister"></Register>
     <Download @dialogDownloadHide="dialogDownloadHide" :dialogDownloadVisible="isShowDownload"></Download>
   </div>
 </template>
 
 <script>
   import Login from '../components/login'
-  import Register from '../components/register'
   import Download from '../components/download'
   export default {
     name: 'Header',
     components:{
-      Login,Register,Download
+      Login,Download
     },
     data() {
       return {
         isShowLogin: false,
-        isShowRegister:false,
         isShowDownload:false,
-        user:true,
       }
     },
     methods: {
@@ -51,17 +44,11 @@
       handleLogin () {
         this.isShowLogin = true
       },
-      handleRegister () {
-        this.isShowRegister = true
-      },
       handleDownload () {
         this.isShowDownload = true
       },
       dialogLoginHide () {
         this.isShowLogin= false
-      },
-      dialogRegisterHide () {
-        this.isShowRegister= false
       },
       dialogDownloadHide () {
         this.isShowDownload= false
@@ -71,23 +58,41 @@
 </script>
 
 <style scoped>
-  .header-wrap {
-    display: inline-block;
-    height: 60px;
-    list-style-type: none;
-    line-height: 60px;
-    color: #fff;
-    float: left;
+  .el-menu-header{
+    height: 66px;
+    line-height: 66px;
     position: relative;
-    left: 4%;
-    border:none;
+    padding-right: 50px;
+  }
+  .icon-logo{
+    width: 94px;
+    height: 44px;
+    background: url("../img/public/logo.png");
+    position: absolute;
     z-index: 2;
+    top:11px;
+    left:100px;
   }
-  .el-menu-demo li{
+  .el-menu-header li{
     float: right;
+    font-size: 16px;
   }
-  .el-menu-item{
-    padding: 0 2%;
+  .el-menu-header .rent-owner-btn{
+    display: inline-block;
+    width: 115px;
+    height: 46px;
+    background: url("../img/public/owner-btn.png");
+    z-index: 2;
+    position: relative;
   }
-
+  .el-menu-header .icon-rent-owner{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../img/public/icon-owner.png");
+    z-index: 3;
+    position: absolute;
+    top:21px;
+    left: 30px;
+  }
 </style>

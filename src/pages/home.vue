@@ -3,10 +3,8 @@
       <Header/>
       <div class="banner-show">
         <div class="banner-search">
-          <div class="news01" id="dsy_D02_01">
-            全球80万空间任你挑
-          </div>
-          <div class="news02">
+          <div class="search-list1">全球80万空间任你挑</div>
+          <div class="search-list2">
             <ul>
               <li>办公室</li>
               <li>会议室</li>
@@ -14,53 +12,151 @@
               <li>其他</li>
             </ul>
           </div>
-          <div class="news03" id="dsy_D02_14" style="position:relative">
-            <input name="" type="text" class="sinputstyle" value="请输入空间名称" maxlength="40" style="color: rgb(136, 136, 136);">
+          <div class="search-list3">
+            <i></i>
+            <el-input placeholder="请输入空间名称">
+              <template slot="append"><el-button>搜索</el-button></template>
+            </el-input>
           </div>
-          <div class="news04">
-            <span>热门城市：</span>北京 上海 广州 深圳
+          <div class="search-list4">
+            <span>热门城市：</span>北京、上海、广州、深圳、杭州、纽约、巴黎
           </div>
         </div>
       </div>
       <div class="know-more">
-        <h1>无论你需要1或200的空间，这里都有</h1>
+        <div class="know-title">无论你需要1或200的空间，这里都有</div>
               <ul>
                 <li>
-                  <h2>办公室</h2>
-                  <h3>在专属办公空间里全职办公</h3>
+                  <i class="icon-office"></i>
+                  <div class="select-name">办公室</div>
+                  <div  class="select-instruction">在专属办公空间里全职办公</div>
                     <p>免装修</p>
                     <p>办公设置齐全</p>
                     <p>以较低的成本租赁繁华地段的办公室</p>
-                  <el-button>了解更多</el-button>
+                    <a href="#/hotSpaces">了解更多</a>
                 </li>
                 <li>
-                  <h2>办公室</h2>
-                  <h3>在专属办公空间里全职办公</h3>
+                  <i class="icon-boardroom"></i>
+                  <div class="select-name">会议室</div>
+                  <div  class="select-instruction">演示、采访、客户演讲、培训随心所欲</div>
                     <p>免装修</p>
                     <p>办公设置齐全</p>
                     <p>以较低的成本租赁繁华地段的办公室</p>
-                  <el-button>了解更多</el-button>
+                  <a href="#/hotSpaces">了解更多</a>
                 </li>
                 <li>
-                  <h2>办公室</h2>
-                  <h3>在专属办公空间里全职办公</h3>
+                  <i class="icon-station"></i>
+                  <div class="select-name">工位</div>
+                  <div  class="select-instruction">共享空间的专属席位，全天候开放</div>
                     <p>免装修</p>
                     <p>办公设置齐全</p>
                     <p>以较低的成本租赁繁华地段的办公室</p>
-                  <el-button>了解更多</el-button>
+                  <a href="#/hotSpaces">了解更多</a>
+                </li>
+                <li>
+                  <i class="icon-other"></i>
+                  <div class="select-name">其他</div>
+                  <div  class="select-instruction">多功能厅、录音棚、会展空间</div>
+                  <p>免装修</p>
+                  <p>办公设置齐全</p>
+                  <p>以较低的成本租赁繁华地段的办公室</p>
+                  <a href="#/hotSpaces">了解更多</a>
                 </li>
               </ul>
-        <div>查看更多</div>
       </div>
       <div class="home-bg">
         <i class="list-one"></i>
-        <h1>随时随地网上预订</h1>
-        <h4>随时随地网上预订随时随地网上预订随时随地网上预订</h4>
+        <div class="list-title">随时随地网上预订</div>
+        <div class="list-text">520个合作空间 +80万真实房源 +网上支付即时便利安全交易</div>
         <i class="list-two"></i>
         <i class="list-three"></i>
-        <h1>我们的合粉</h1>
+        <div class="list-title">我们的合粉</div>
         <i class="list-four"></i>
+        <ul class="fans">
+          <li>
+            <div class="fans-name">Danny Ching</div>
+            <div class="fans-instruction">Uptown Lifestyle 合伙人</div>
+            <p>
+              创合秒租让整个城市成为了我的创业空间，我每天随着我的心情选择我喜欢的办公场所。它帮我找到了一批北京最 cool最炫的创业社区。</p>
+          </li>
+          <li>
+            <div class="fans-name">李斯发</div>
+            <div class="fans-instruction">享居派创始人兼CEO</div>
+            <p>
+              在我们快速扩张时期，我们不用担心办公空间，仅仅10分钟，创合秒租帮我们市场部在上海最核心的区域找到了新家，工作一天都没因为搬家而停顿。在创业初期，时间就是生命，浪费一天就可能死在创业的路上。</p>
+          </li>
+          <li>
+            <div class="fans-name">Irati Arka</div>
+            <div class="fans-instruction">Mondragon Team Academy</div>
+            <p>
+              I always find the right working environment for our business, networking opportunities and the right rental rooms for meetings, workshop and open events as well as private office for our team. And the app is very user friendly.</p>
+          </li>
+          <li>
+            <div class="fans-name">Bertrand</div>
+            <div class="fans-instruction">LGM Ltd. CEO</div>
+            <p>
+              It’s very easy to book a meeting room or office room on the apps wherever you are and whatever you want.It’s one of my favorite function in Sandbox. It’s ideal for start ups on entrepreneur starting their projects in every city.</p>
+          </li>
+        </ul>
         <i class="list-five"></i>
+        <div class="list-title">热门空间</div>
+          <ul class="hot-enter">
+            <li>
+              <i></i>
+              <div class="hot-list-content">
+                <div class="hot-list-name">云海办公室</div>
+                <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+                <div class="price">￥256.5<span>/月起</span></div>
+              </div>
+            </li>
+            <li>
+              <i></i>
+              <div class="hot-list-content">
+                <div class="hot-list-name">云海办公室</div>
+                <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+                <div class="price">￥256.5<span>/月起</span></div>
+              </div>
+            </li>
+            <li>
+              <i></i>
+              <div class="hot-list-content">
+                <div class="hot-list-name">云海办公室</div>
+                <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+                <div class="price">￥256.5<span>/月起</span></div>
+              </div>
+            </li> <li>
+            <i></i>
+            <div class="hot-list-content">
+              <div class="hot-list-name">云海办公室</div>
+              <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+              <div class="price">￥256.5<span>/月起</span></div>
+            </div>
+          </li>
+            <li>
+              <i></i>
+              <div class="hot-list-content">
+                <div class="hot-list-name">云海办公室</div>
+                <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+                <div class="price">￥256.5<span>/月起</span></div>
+              </div>
+            </li>
+            <li>
+              <i></i>
+              <div class="hot-list-content">
+                <div class="hot-list-name">云海办公室</div>
+                <div>123㎡ 可容纳25人 上海杨浦区杨浦联合社区</div>
+                <div class="price">￥256.5<span>/月起</span></div>
+              </div>
+            </li>
+          </ul>
+        <div class="look-more">查看更多空间</div>
+        <div class="list-text">加入我们接受最新空间消息和特殊优惠</div>
+        <el-input placeholder="请输入手机号码" class="input-select-number">
+          <el-select slot="prepend" placeholder="+86">
+            <el-option label="+86" value="1"></el-option>
+          </el-select>
+          <el-button slot="append">加入</el-button>
+        </el-input>
       </div>
       <Footer/>
     </div>
@@ -88,7 +184,7 @@ export default {
   .banner-show{
     position: relative;
     width: 100%;
-    min-height: 300px;
+    height: 560px;
     background-image: url('../img/pages/home-banner.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -96,110 +192,122 @@ export default {
     text-align: center;
   }
   .banner-search{
-    width: 400px;
-    height: 200px;
+    width: 620px;
     position: absolute;
     z-index: 333;
     left: 50%;
     top: 50%;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -310px;
+    margin-top: -132px;
   }
-  .news01 {
-    width: 400px;
+  .search-list1 {
+    width: 620px;
     color: #fff;
-    font-size:40px;
+    font-size:66px;
+    margin-bottom: 68px;
   }
-  .news02{
-    width: 400px;
-    height: 30px;
-    margin-top: 30px;
-    z-index:333;
-    position: relative;
-    font-size: 14px;
+  .search-list2{
+    width: 346px;
+    height: 20px;
+    line-height: 20px;
+    margin:0 auto;
+    font-size: 20px;
   }
-  .news02 ul{
-    width: 400px;
+  .search-list2 ul{
+    width: 346px;
   }
-  .news02 ul li{
+  .search-list2 ul li{
     float: left;
     color: #fff;
     width: 25%;
   }
-  .news03 {
-    width: 400px;
-    height: 42px;
-    z-index: 777;
-    position:relative
+  .search-list3 {
+    width: 620px;
+    height: 84px;
   }
-  .news04{
-    width: 400px;
+  .search-list3 i{
+    display: block;
+    width: 21px;
+    height: 11px;
+    background: url('../img/pages/icon-home-search.png');
+    margin-left: 170px;
+  }
+
+  .search-list3 button{
+    width: 165px;
+    height: 54px;
+    background: #FB274B;
+    border-radius: 0;
+  }
+  .search-list4{
+    width: 620px;
     color: #fff;
-    margin-top: 20px;
-  }
-  .sinputstyle {
-    float: left;
-    width: 400px;
-    height: 42px;
-    line-height: 42px;
-    color: #888;
-    overflow: hidden;
-    border: 0;
-    font-size: 14px;
-    text-indent: 10px;
-    outline: none;
+    margin-top: 30px;
+    font-size: 16px;
   }
   .know-more{
-    height: 350px;
+    height: 476px;
     text-align: center;
+    color: #000;
   }
-  .know-more h1{
-    height: 80px;
-    line-height: 80px;
+  .know-title{
+    font-size: 30px;
+    margin: 60px 0;
   }
   .know-more ul{
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
   }
   .know-more ul li{
     float: left;
     width: 300px;
-    margin-right: 50px;
-    height: 220px;
-    border: 1px solid #ecf5ff;
-    border-top: 3px solid #ff0000;
+    height: 350px;
   }
-  .know-more ul li:last-child{
-    margin-right: 0;
+  .know-more ul li i{
+    display: inline-block;
+    width: 68px;
+    height: 66px;
   }
-  .know-more ul li h2{
-    height: 50px;
-    line-height: 50px;
+  .icon-office{
+    background: url('../img/pages/home-office.png');
   }
-  .know-more ul li h3{
-    height: 30px;
-    line-height: 30px;
+  .icon-boardroom{
+    background: url('../img/pages/home-boardroom.png');
   }
-  .know-more ul li p{
-    line-height: 2;
-    color: #909399;
+  .icon-station{
+    background: url('../img/pages/home-station.png');
   }
-  .know-more button{
-    width: 120px;
-    height: 40px;
-    background: #ff0000;
-    color: #fff;
-    margin: 10px 0;
+  .icon-other{
+    background: url('../img/pages/home-other.png');
   }
+  .select-name{
+font-size: 20px;
+    margin: 19px 0 37px 0;
+  }
+  .select-instruction{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .know-more p{
+    line-height: 1.5;
+    color: #A0A0A0;
+  }
+  .know-more ul li a {
+    display: inline-block;
+    color: #316F93;
+    font-size: 16px;
+    margin-top: 39px;
+  }
+
   .home-bg{
     text-align: center;
+    color: #000;
   }
   .home-bg i{
     display: inline-block;
     position: relative;
     width: 100%;
-    min-height: 300px;
-    max-height: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -209,21 +317,110 @@ export default {
   }
   .list-two{
     width: 942px !important;
-    height: 429px;
+    height: 429px !important;
     background-image: url('../img/pages/home-list2.png');
+    margin-bottom: 80px;
   }
   .list-three{
     background-image: url('../img/pages/home-list3.png');
   }
   .list-four{
     width: 955px !important;
-    height: 340px;
+    height: 340px !important;
     background-image: url('../img/pages/home-list4.png');
   }
   .list-five{
     background-image: url('../img/pages/home-list5.png');
   }
-  .home-bg h1{
-    margin: 10px;
+  .list-title{
+    font-size: 29px;
+    margin: 60px 0 28px 0;
+  }
+  .list-text{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .fans{
+    width: 1050px;
+    height: 400px;
+    color: #484848;
+    margin: 0 auto;
+  }
+  .fans li{
+      float: left;
+    width: 220px;
+    margin-right: 55px;
+  }
+  .fans li:last-child{
+    margin-right: 0;
+  }
+  .fans-name{
+    font-size: 25px;
+  }
+  .fans-instruction{
+    font-size: 16px;
+    margin: 15px 0 29px 0;
+  }
+  .fans p{
+    font-size: 14px;
+  }
+  .hot-enter{
+    width: 1200px;
+    height: 390px;
+    margin: 0 auto;
+  }
+  .hot-enter li{
+    width: 570px;
+    margin: 0 30px 10px 0;
+    height: 120px;
+    float: left;
+    border:1px solid #F6F6F6;
+  }
+  .hot-enter i{
+    display: inline-block;
+    width: 170px;
+    height: 120px;
+    float: left;
+  }
+  .hot-list-content{
+    float: left;
+    color: #484848;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+  }
+  .hot-list-name{
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .price{
+    color: #FB274B;
+    margin-top: 10px;
+     }
+  .price span{
+    font-size: 12px;
+  }
+  .look-more{
+    width: 202px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border: 1px solid #FB274B;
+    color: #FB274B;
+    margin: 30px auto;
+  }
+</style>
+<style>
+  .search-list3 .el-input__inner {
+    height: 74px;
+    border: 1px solid #fff;
+    color: #999;
+    font-size: 20px;
+  }
+  .search-list3 .el-input-group__append, .el-input-group__prepend{
+    background: #fff;
+    border: 10px solid #fff;
+    color: #fff;
+    font-size: 20px;
   }
 </style>
