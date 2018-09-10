@@ -14,8 +14,8 @@
           </div>
           <div class="search-list3">
             <i></i>
-            <el-input placeholder="请输入空间名称">
-              <template slot="append"><el-button>搜索</el-button></template>
+            <el-input placeholder="请输入空间名称" class="search-input">
+              <template slot="append"><a href="#/SpacesList"><el-button>搜索</el-button></a></template>
             </el-input>
           </div>
           <div class="search-list4">
@@ -157,6 +157,13 @@
           </el-select>
           <el-button slot="append">加入</el-button>
         </el-input>
+        <div class="owner-enter">
+            <div class="apply">
+              在线发布房源,收益看的见
+              <div class="apply-enter">申请成为房东</div>
+            </div>
+        </div>
+        <div class="home-bg-footer"><i></i></div>
       </div>
       <Footer/>
     </div>
@@ -238,6 +245,7 @@ export default {
     height: 54px;
     background: #FB274B;
     border-radius: 0;
+    color: #fff;
   }
   .search-list4{
     width: 620px;
@@ -381,6 +389,7 @@ font-size: 20px;
     width: 170px;
     height: 120px;
     float: left;
+    background-image: url('../img/pages/owner-list1.png');
   }
   .hot-list-content{
     float: left;
@@ -409,6 +418,67 @@ font-size: 20px;
     color: #FB274B;
     margin: 30px auto;
   }
+  .input-select-number{
+    width: 330px;
+    border: 1px solid #F6F6F6;
+  }
+  .input-select-number button{
+    width:72px;
+    height:44px;
+    background:rgba(251,39,75,1);
+    color: #fff;
+    border-radius: 0;
+  }
+  .owner-enter{
+    width: 100%;
+    height: 560px;
+    margin-top: 60px;
+    background-image: url('../img/pages/home-owner.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  .apply{
+    font-size: 33px;
+    width: 610px;
+    height: 270px;
+    background: #fff;
+    color: #484848;
+    position: absolute;
+    z-index: 333;
+    left: 50%;
+    top: 50%;
+    margin-left: -305px;
+    margin-top: -135px;
+    padding: 57px;
+  }
+  .apply-enter{
+      width: 273px;
+    height: 74px;
+    line-height: 74px;
+    background: #FB274B;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 38px;
+    box-shadow:-1px 4px 4px 0px rgba(86,86,86,0.09);
+  }
+  .home-bg-footer{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    box-shadow:0px -2px 8px 0px rgba(198,198,198,0.39);
+  }
+  .home-bg-footer i{
+    width: 100%;
+   height: 169px !important;
+    background-image: url('../img/pages/home-footer.png');
+    position: absolute;
+    top:-39px;
+    left: 0px;
+  }
 </style>
 <style>
   .search-list3 .el-input__inner {
@@ -416,11 +486,28 @@ font-size: 20px;
     border: 1px solid #fff;
     color: #999;
     font-size: 20px;
+    border-radius: 0;
   }
-  .search-list3 .el-input-group__append, .el-input-group__prepend{
+  .search-list3>.search-input>.el-input-group__append,.el-input-group__prepend{
     background: #fff;
-    border: 10px solid #fff;
     color: #fff;
     font-size: 20px;
+    border-radius: 0;
+    padding: 0;
+    width: 0;
+  }
+  .home-bg>.input-select-number .el-select .el-input {
+    width: 100px;
+  }
+  .home-bg>.input-select-number .el-input__inner{
+    height: 44px;
+    border-color: #fff;
+  }
+  .home-bg>.input-select-number>.el-input-group__prepend {
+    background-color: #fff;
+    border-radius: 0;
+    padding: 0 15px;
+    width: 1px;
+    border-color: #fff;
   }
 </style>

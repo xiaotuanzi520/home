@@ -4,6 +4,7 @@ import Home from '../pages/home'
 import Help from '../pages/help'
 import Case from '../pages/case'
 import Spaces from '../pages/spaces'
+import SpacesList from '../pages/spacesList'
 import HotSpaces from '../pages/hotSpaces'
 import RentOwner from '../pages/rentOwner'
 import CreateHouse from '../pages/createHouse'
@@ -34,6 +35,10 @@ export default new Router({
       path: '/spaces',
       name: 'Spaces',
       component: Spaces
+    }, {
+      path: '/spacesList',
+      name: 'SpacesList',
+      component: SpacesList
     }, {
       path: '/hotSpaces',
       name: 'HotSpaces',
