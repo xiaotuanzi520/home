@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <OwnerHeader/>
     <div class="help-wrap">
       <i></i>
     <ul class="detail">
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-  import Header from '../components/header'
   import Footer from '../components/footer'
+  import OwnerHeader from "../components/ownerHeader";
   export default {
     name: 'Help',
     components:{
-      Header,Footer
+      OwnerHeader, Footer
     },
     data() {
       return {

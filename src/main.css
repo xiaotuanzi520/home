@@ -18,6 +18,7 @@ fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
   text-decoration: none;
+  color: #fff;
 }
 p{
   line-height: 2;
@@ -52,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
   position: relative;
   display: inline-block;
   width: 100%;
-  min-height: 300px;
+  height: 560px;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

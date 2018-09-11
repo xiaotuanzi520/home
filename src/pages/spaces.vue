@@ -1,8 +1,11 @@
 <template>
   <div>
     <Header/>
-    <div class="space-header">
-
+    <div class="banner space-header">
+      <div>
+        <div class="space-header-title">秒租办公</div>
+        <div class="space-header-notes">全球80万空间任你挑</div>
+    </div>
     </div>
     <div class="space-list">
       <ul>
@@ -30,6 +33,16 @@
           </div>
           <i class="list-two fr"></i>
         </li>
+        <li>
+          <i class="list-three"></i>
+          <div class="list-introduce fr">
+            <h1>INNOSPACE+</h1>
+            <p>
+              INNOSPACE+是国内首创的新型创业社区，由瑞安地产旗下的创智天地建设。INNOSPACE+最早起源于2011年8月成立的IPOclub创业咖啡和2012年11月成立的InnoSpace创业孵化器。InnoSpace孵化器是科技部认定的国家级众创空间，《创业邦》2015国内最受关注的孵化器10强，投中集团2016中国最佳众创空间10强。
+
+              INNOSPACE+是一个完整的、全要素、一站式创业社区，包括了InnoSpace孵化平台、InnoWork联合办公、IPOclub创业咖啡、InnoMaker创客空间、InnoApartment创业公寓等多种创业功能载体，满足创业者办公、成长、交流、生活等全方位的需求。同时，加上InnoSpace已经运营多年的创业加速计划——国际创业集训营，以及2015年成立的InnoSpace天使基金，INNOSPACE+构建起国内创业要素最丰富、功能最完善并且充满活力的创业生态系统。INNOSPACE+不仅为创业者提供一流的空间，更重要的是提供最佳的创业服务和资源。INNOSPACE+创业生态系统将会给创业者提供最好的创业体验和最高效的创业环境，助力优秀创业者更快地实现创业梦想。</p>
+          </div>
+        </li>
       </ul>
     </div>
     <Footer/>
@@ -52,24 +65,36 @@
 
 <style scoped>
   .space-header{
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    font-weight: 300;
     color: #fff;
     background-image: url('../img/pages/space-banner.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+  }
+  .space-header>div{
+    width: 470px;
+    height: 100px;
+    position: absolute;
+    z-index: 333;
+    left: 50%;
+    top: 50%;
+    margin-left: -235px;
+    margin-top: -50px;
+    text-align: center;
+  }
+  .space-header-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .space-header-notes{
+    font-size: 50px;
   }
   .space-list{
     width: 1100px;
     margin: 0 auto;
+    margin-top: 80px;
   }
   .space-list ul li{
     width: 1100px;
-    height: 400px;
-    margin: 20px;
+    min-height: 400px;
+    margin-bottom: 60px;
   }
   .space-list i{
     display: inline-block;
@@ -83,19 +108,16 @@
   .list-two{
     background: url("../img/pages/space-list2.png");
   }
+  .list-three{
+    background: url("../img/pages/space-list3.png");
+  }
   .list-introduce{
     display: inline-block;
-    margin-left: 20px;
     width: 509px;
-    height: 400px;
-    line-height: 400px;
+    min-height: 400px;
   }
   .list-introduce h1{
-    height: 50px;
-    line-height: 2;
+    height: 70px;
+    line-height: 1;
   }
-  .list-introduce p{
-    line-height: 2;
-  }
-
 </style>

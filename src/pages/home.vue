@@ -149,18 +149,18 @@
               </div>
             </li>
           </ul>
-        <div class="look-more">查看更多空间</div>
+        <div class="look-more"><a href="#/spacesList"></a>查看更多空间</div>
         <div class="list-text">加入我们接受最新空间消息和特殊优惠</div>
         <el-input placeholder="请输入手机号码" class="input-select-number">
           <el-select slot="prepend" placeholder="+86">
-            <el-option label="+86" value="1"></el-option>
+            <el-option label="+86"></el-option>
           </el-select>
           <el-button slot="append">加入</el-button>
         </el-input>
         <div class="owner-enter">
             <div class="apply">
               在线发布房源,收益看的见
-              <div class="apply-enter">申请成为房东</div>
+              <div class="apply-enter"><a href="#/createHouse">申请成为房东</a></div>
             </div>
         </div>
         <div class="home-bg-footer"><i></i></div>
